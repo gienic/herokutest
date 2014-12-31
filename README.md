@@ -1,4 +1,3 @@
-herokutest
+Symfony Test App ready for horuko
 ==========
 
-heroku test
