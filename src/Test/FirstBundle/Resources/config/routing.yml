@@ -1,0 +1,3 @@
+test_first_main:
+    path: /printfirstname/{name}
+    defaults: { _controller: TestFirstBundle:Main:dadada }

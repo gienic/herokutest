@@ -1,0 +1,12 @@
+test_store:
+    resource: "@TestStoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+test_demo:
+    resource: "@TestDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+test:
+    resource: "@TestFirstBundle/Resources/config/routing.yml"
+    prefix:   /
+

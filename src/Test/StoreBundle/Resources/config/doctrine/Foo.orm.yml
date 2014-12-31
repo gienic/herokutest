@@ -1,0 +1,20 @@
+Test\StoreBundle\Entity\Foo:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        foo:
+            type: string
+            length: 255
+        foo2:
+            type: integer
+        foo3:
+            type: integer
+        foo4:
+            type: integer
+    lifecycleCallbacks: {  }

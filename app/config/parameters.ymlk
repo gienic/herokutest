@@ -1,0 +1,17 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: localhost
+    database_port: null
+    database_name: webdevng
+    database_user: webdevng
+    database_password: webdevng1618317515987
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: 8f5733771068e7e210ffae105b73166834
+    debug_toolbar: true
+    debug_redirects: false
+    use_assetic_controller: true
