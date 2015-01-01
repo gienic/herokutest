@@ -26,6 +26,9 @@
         "heroku/heroku-buildpack-php": "*"
     },
     "scripts": {
+        "pre-install-cmd": [
+            "Acme\\DemoBundle\\HerokuDatabase::populateEnvironment"
+        ],
         "post-root-package-install": [
             "SymfonyStandard\\Composer::hookRootPackageInstall"
         ],
