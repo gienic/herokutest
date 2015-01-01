@@ -2,11 +2,11 @@
 
 namespace Acme\DemoBundle;
 
-use Composer\Script\Event;
+use Composer\Script\CommandEvent;
 
 class HerokuDatabase
 {
-    public static function populateEnvironment(Event $event)
+    public static function populateEnvironment(CommandEvent $event)
     {
         $url = getenv("DATABASE_URL");
 
@@ -22,5 +22,10 @@ class HerokuDatabase
         $io = $event->getIO();
 
         $io->write("DATABASE_URL=".getenv("DATABASE_URL"));
+
+        $io->write("Database_host:".$url['host']);
+        $io->write("Database_user:".$url['user']);
+        $io->write("Database_password:".$url['pass']);
+        $io->write("Database_name:".$db);
     }
 }
